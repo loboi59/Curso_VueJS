@@ -1,0 +1,30 @@
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+<div id="app">
+    <!-- paragrafo com double mustache -->
+    <p>{{titulo}}</p>
+    <!-- faz a leitura uma únic vez e não atualiza mais -->
+    <p v-once>{{titulo}}</p>
+    <p>{{saudacao ()}}</p>
+    <!-- diretiva v-bind que serve para ligar ou conectar dado e atributo -->
+    <a v-bind:href="link">Google</a>
+</div>
+
+
+<script>
+    new Vue (
+        {
+            el:'#app',
+                data: {
+                    titulo:'VueJS versao 2',
+                    link: 'https://google.com.br'
+                },
+                methods: {
+                    saudacao: function() {
+                        console.log(this)
+                        return this.titulo
+                    }
+                }
+        })
+
+</script>

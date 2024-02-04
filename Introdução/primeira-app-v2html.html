@@ -1,0 +1,38 @@
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+<div id ='app'>
+    <input type="text" v-on:input="alterarTitulo">
+<p>{{titulo}}</p>
+</div>
+
+<!-- div#conteudo 
+Atalho usado para criar uma DIV com ID conteudo
+-->
+<!-- div.estilo-1 
+Dando um TAB ou ENTER é um Atalho usado para criar uma DIV de Classe estilo 1
+-->
+<!-- div#teste.estilo-2 
+Atalho usado para criar uma DIV de ID teste e com CLASSE de tipo 2
+-->
+<!-- img[src] 
+Dando um TAB é um Atalho para criar o ATRIBUTO de imagem
+-->
+<!-- p[ricardo-epa] 
+Dando um TAB é um Atalho para criar um ATRIBUTO personalizado
+-->
+
+<script>
+    new Vue ({
+        el:'#app',
+            data: {
+            titulo: 'Usando VueJS 2!'
+    },
+
+    methods:{
+            alterarTitulo(event){
+                this.titulo = event.target.value
+            }
+        }
+        })
+       
+</script>

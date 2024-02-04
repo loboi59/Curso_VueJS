@@ -1,0 +1,85 @@
+/* WIDTH */
+.width300px{width: 300px!important;}
+.width30per{width: 30%!important;}
+.width49per{width: 49%!important;}
+.width70per{width: 70%!important;}
+.width100per{width: 100%!important;}
+
+/* FONTS and TEXT ALG */
+.fontSz07em{font-size:0.7em!important;}
+.textAlgRgt{text-align: right!important;}
+
+/* MARIGNS AND PAGGINDGS */
+.marginT20{margin-top:-20px!important;}
+.marginB0{margin-bottom:0!important;}
+.marginT0{margin-top:0!important;}
+.marginT20B0{margin-top:-20px;margin-bottom:0!important}
+.marginLR20{margin:0 20px!important;}
+.marginTB10{margin: 10px 0 !important;}
+.marginTop20{margin-top: 20px!important;}
+.paddingA10{ padding:10px!important;}
+.paddingR5{ padding-right: 5px!important;}
+.paddingR10{ padding-right:10px!important;}
+
+.paddingB10{ padding-bottom:15px!important;}
+/* FLOATS */
+.floatLft{float:left!important}
+
+/* COLORS BG and FONT */
+.bgColorFFF{background-color:#ffffff!important;}
+.colorFFF{background-color:#ffffff!important;}
+.bgColorAddress{background-color:rgb(128, 125, 125)!important;}
+/* HELPERS */
+.v-card-title{background-color: #1E88E5;color:#fff;max-height: 45px!important;}
+.pointer { cursor: pointer !important;}
+.noTextDecoration{text-decoration: none!important;}
+
+/* TRANSITIONS */
+
+.slide-enter-active {
+    animation: slide-in 200ms ease-out forwards;
+}
+.slide-leave-active {
+    animation: slide-out 200ms ease-out forwards;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slide-out {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+}
+
+/* MEDIA */
+@media (max-width: 768px){
+    .statusPrd{width: 45%!important;float: left!important;margin-right: 20px!important;}
+}
+@media (max-width: 425px ) {
+    .container{
+        padding:20px 0 0 0!important;
+    }
+    .v-layout-mob{
+        padding:0 5px!important;
+    }
+    .btnMob{margin: 10px!important;}
+    .statusPrd{
+        width: 100%!important;
+        float: none!important;
+        margin-right: inherit!important;
+    }
+    .width49per{width: 100%!important;}
+}
