@@ -8,6 +8,8 @@
     <p>{{saudacao ()}}</p>
     <!-- diretiva v-bind que serve para ligar ou conectar dado e atributo -->
     <a v-bind:href="link">Google</a>
+    <hr>
+    <p v-html="linkHtml"></p>
 </div>
 
 
@@ -17,7 +19,8 @@
             el:'#app',
                 data: {
                     titulo:'VueJS versao 2',
-                    link: 'https://google.com.br'
+                    link: 'https://google.com.br',
+                    linkHtml:'<a href="http://google.com">Google<a/>'
                 },
                 methods: {
                     saudacao: function() {

@@ -1,0 +1,10 @@
+{
+    "npm.enableRunFromFolder": true,
+    "npm.runSilent": true,
+    "npm.scriptExplorerExclude": [
+        "npm"
+    ],
+    "npm.oldKeybindings.enable": true,
+    "npm.enableTouchbar": true,
+    "typescript.disableAutomaticTypeAcquisition": false
+}
